@@ -1,12 +1,28 @@
+<script>
+import Typed from 'typed.js'
+export default {
+  mounted() {
+    const options = {
+      strings: ["Interface", "System Application", "Ideas to Life"],
+      typeSpeed: 80,
+      backSpeed: 50,
+      loop: true,
+      loopCount: Infinity,
+    }
+    new Typed('.typed', options)
+  }
+}
+</script>
+
 <template>
     <section id="hero" class="hero">
         <div class="container position-relative">
             <div class="row gy-5" data-aos="fade-in">
                 <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
                     <h2>Welcome</h2>
-                    <p>We Create Design Interface, System Application, Ideas To Life</p>
+                    <p>We Create <span class="typed"></span></p>
                     <div class="d-flex justify-content-center justify-content-lg-start">
-                        <a href="#about" class="btn-get-started">Get Started</a>
+                        <a v-scroll-to="'#about'" href="javascript:void(0)" class="btn-get-started">Get Started</a>
                     </div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2">

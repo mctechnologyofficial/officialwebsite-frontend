@@ -13,15 +13,15 @@
 
   <header id="header" class="header d-flex align-items-center">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="/" class="logo d-flex align-items-center">
         <h1>MC TECHNOLOGY<span>.</span></h1>
       </a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
+          <li><a v-scroll-to="'#hero'" href="javascript:void(0)">Home</a></li>
+          <li><a v-scroll-to="'#about'" href="javascript:void(0)">About</a></li>
+          <li><a v-scroll-to="'#portfolio'" href="javascript:void(0)">Portfolio</a></li>
+          <li><a v-scroll-to="'#team'" href="javascript:void(0)">Team</a></li>
         </ul>
       </nav>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
