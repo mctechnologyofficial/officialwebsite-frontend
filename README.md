@@ -1,4 +1,4 @@
-# frontend
+# MC TECHNOLOGY FRONT END
 
 ## Project setup
 ```
